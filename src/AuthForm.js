@@ -38,7 +38,7 @@ class AuthForm extends React.Component {
         const {username, password, x_captcha_answer, x_captcha_key} = this.state;
         this.api.generate_token_by_username_and_password(username, password, x_captcha_answer, x_captcha_key).then(token => {
             this.api.send_token_to_backend(this.state.branch, this.state.hash, token).then(resp => {
-                window.location.href = `tg://resolve?domain=nowplaybot`;
+                window.location.href = `tg://resolve?domain=rnplaybot`;
                 this.setState({...this.state, authenticated: true})
             }).catch(error => {
                 this.setState({
@@ -71,20 +71,20 @@ class AuthForm extends React.Component {
             return (
                 <>
                 <p><b>Кажется, вы перешли по неправильной ссылке, поэтому формы не будет.</b></p>
-                <p><a href={`${this.mirror}nowplaybot`}>Вернитесь в бота</a> и попробуйте снова.</p>
+                <p><a href={`${this.mirror}rnplaybot`}>Вернитесь в бота</a> и попробуйте снова.</p>
                 </>
                 );
         }
 
         return authenticated ? (
             <>
-                <a href={`tg://resolve?domain=nowplaybot`}>
+                <a href={`tg://resolve?domain=rnplaybot`}>
                     <Button variant="primary" block>
                         Перейти в бота
                     </Button>
                 </a>
                 <small className="text-muted ">Если кнопка не работает -
-                    <a href={`${this.mirror}nowplaybot`}> перейдите по ссылке</a>
+                    <a href={`${this.mirror}rnplaybot`}> перейдите по ссылке</a>
                 </small>
             </>
         ) : (

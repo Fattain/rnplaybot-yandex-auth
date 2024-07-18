@@ -12,7 +12,7 @@ class App extends Component {
                     <Col>
                         <Row>
                             <Container>
-                                <h4><a href="tg://resolve?domain=nowplaybot">@nowplaybot</a> <Badge variant="primary">Yandex.Music</Badge></h4>
+                                <h4><a href="tg://resolve?domain=rnplaybot">@rnplaybot</a> <Badge variant="primary">Yandex.Music</Badge></h4>
                             </Container>
                         </Row>
                         <Row>
@@ -70,7 +70,7 @@ class App extends Component {
                         <Row className="d-flex justify-content-between">
                             <Col>
                                 <span>Исходный код: <a
-                                    href="https://github.com/aprosvetova/nowplaybot-yandex-auth">nowplaybot-yandex-auth</a></span>
+                                    href="https://github.com/Fattain/rnplaybot-yandex-auth">rnplaybot-yandex-auth</a></span>
                             </Col>
                             <Col className="text-right">
                                 <span> Автор <a href="https://github.com/MarshalX/yandex-music-token">оригинальной странички</a>: <a href="tg://resolve?domain=MarshalX">@MarshalX</a></span>

